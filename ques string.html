@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<p id="yes1"></p>
+<p id="yes2"></p>
+<p id="yes3"></p>
+<p id="yes4"></p>
+<p id="yes5"></p>
+<p id="yes6"></p>
+<p id="yes7"></p>
+<script type="text/Javascript">
+var str="workship God God is great ";
+var str1="and do good deeds";
+var str2="workship humanity god is great";
+document.getElementById("yes1").innerHTML=str.indexOf("God");
+document.getElementById("yes2").innerHTML=str.replace(/God/g,"humanity");
+document.getElementById("yes3").innerHTML=str2.slice(8,17);
+document.getElementById("yes4").innerHTML=str.concat(str1);
+document.getElementById("yes5").innerHTML=str.charCodeAt(20);
+document.getElementById("yes6").innerHTML=str.search("g");
+document.getElementById("yes7").innerHTML=str.match(/great/g);
+</script>
+</body>
+</html>

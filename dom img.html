@@ -1,0 +1,19 @@
+<html>
+<body>
+<img id="myDIV" src="download1.jpg" alt="name" height=250>
+<br>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() 
+{
+    var x = document.getElementById("myDIV");
+    var txt = "";
+    txt += "The node name: " + x.nodeName + "<br>";
+    txt += "The node value: " + x.nodeValue + "<br>";
+    txt += "The node type: " + x.nodeType;
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>

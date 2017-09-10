@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<button type="button" onclick="demo1()">date</button>
+<button type="button" onclick="demo2()">date_string</button>
+<p id="yes1"></p>
+<p id="yes2"></p>
+<script type="text/Javascript">
+function demo1()
+{
+document.getElementById("yes1").innerHTML=Date();
+}
+function demo2()
+{
+var d = new Date("October 13, 2014 11:13:00");
+document.getElementById("yes2").innerHTML = d;
+}
+</script>
+</body>
+</html>

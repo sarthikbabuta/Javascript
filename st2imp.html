@@ -1,0 +1,97 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<form>
+<p>Major Dishes Avalaible</p>
+<label for="noodle">noodle</label>
+<input type="checkbox" name="a">noodle
+<label for="burger">burger</label>
+<input type="checkbox" name="b">burger
+<label for="manchurian">noodle</label>
+<input type="checkbox" name="manchurian">manchurian
+
+<p>Startor Avalaible</p>
+<label for="soops">soops</label>
+<input type="radio" name="a">soops
+<label for="salads">salads</label>
+<input type="radio" name="a">salads
+
+
+<br>
+
+<p>Desert Available</p>
+<select id="yes2" onchange="demo2()">
+<option  value="drinks">drinks</option>
+<option  value="desert">desert</option>
+</select>
+
+</form>
+<script>
+
+function demo()
+{
+var x=document.getElementById("yes").value;
+document.write(x);
+}
+
+function demo1()
+{
+var y=document.getElementById("yes1").value;
+document.write(y);
+}
+
+function demo2()
+{
+var z=document.getElementById("yes2").value;
+document.write(z);
+}
+
+function totalcost()
+{
+ var noodle=100;
+var burger=50;
+var manchurian=70;
+var soops=80;
+var salads=50;
+var drinks=30;
+var desert=70;
+document.write("<br>"+"price of noodle"+noodle);
+
+document.write("<br>"+"price of burger"+burger);
+
+document.write("<br>"+"price of manchurian"+manchurian);
+
+document.write("<br>"+"price of  soops"+soops);
+
+document.write("<br>"+"price of salads"+salads);
+
+document.write("<br>"+"price of drinks"+drinks);
+
+document.write("<br>"+"price of desert"+desert);
+
+var total1=noodle+burger+manchurian;
+var total2=soops+salads;
+var total3=desert+drinks;
+var total=total1+total2+total3;
+
+document.write("<br><br>"+"total price of multiple choice"+total1);
+document.write("<br><br>"+"total price of single choice"+total2);
+document.write("<br><br>"+"total price of desert"+total3);
+document.write("<br><br>"+"total bill"+total);
+}
+function demo()
+{
+alert("your food has been reseted");
+}
+</script>
+<br>
+<br>
+<button type="button" onclick="totalcost()">totalcost</button>
+<form onreset="demo()">
+<br>
+<input type="reset">
+</form>
+</body>
+</html>

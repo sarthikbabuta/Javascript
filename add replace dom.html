@@ -1,0 +1,58 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<table border=5px>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6</td>
+<td id="textremove">7</td>
+<td id="textreplace">8</td>
+</tr>
+<td>9</td>
+<td id="textinput"></td>
+<td>10</td>
+<td>11</td>
+</tr>
+<tr>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+</tr>
+</table>
+<p id="yes1"></p>
+<p id="yes2"></p>
+<p id="yes3"></p>
+<button type="button" onclick="demo1()">add</button>
+<button type="button" onclick="demo2()">remove</button>
+<button type="button" onclick="demo3()">replace</button>
+<script>
+function demo1()
+{
+var a=document.getElementById("textinput");
+var b=document.createTextNode("Hello");
+a.appendChild(b);
+}
+function demo2()
+{
+var a=document.getElementById("textremove");
+a.removeChild(a.childNodes[0]);
+}
+
+function demo3()
+{
+var a=document.getElementById("textreplace");
+var b=document.createTextNode("16");
+a.replaceChild(b,a.childNodes[0]);
+}
+</script>
+</body>
+</html>

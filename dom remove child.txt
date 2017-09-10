@@ -1,0 +1,15 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<div id="main">
+<p id="yes">hello</p>
+</div>
+<script>
+var a=document.getElementById("main");
+var b=document.getElementById("yes");
+a.removeChild(b);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<p id="yes1"></p>
+<p id="yes2"></p>
+<p id="yes3"></p>
+<p id="yes4"></p>
+<p id="yes5"></p>
+<script type="text/Javascript">
+var demo1=["red","green","cyan","black"];
+var demo2=["red","green","cyan","black"];
+document.getElementById("yes1").innerHTML=demo1.join("+");
+document.getElementById("yes2").innerHTML=demo1;
+document.getElementById("yes3").innerHTML=demo1.slice(0,2);
+document.getElementById("yes4").innerHTML=demo2.reverse();
+demo2.unshift("pink");
+document.getElementById("yes5").innerHTML=demo2;
+</script>
+</body>
+</html>

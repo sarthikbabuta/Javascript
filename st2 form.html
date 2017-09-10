@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> </title>
+<style>
+p
+{
+color:green;
+}
+</style>
+</head>
+<body>
+<p onmouseover="yes()">enter the details</p>
+Username
+<input type="text" onchange="yes1()" id="yes2" onfocus="demo1()">
+<br>
+<br>
+Password
+<input type="password">
+<br>
+<form onsubmit="demo()">
+<input type="submit">
+</form>
+<script>
+function yes()
+{
+alert("no details entered");
+}
+function demo1()
+{
+document.getElementById("yes2").style.backgroundColor="red";
+}
+function demo()
+{
+alert("submitted");
+}
+</script>
+</body>
+</html>

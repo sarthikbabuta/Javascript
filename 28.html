@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title></title>	
+	</head>
+	<body>
+		<input type="button" onClick="fun1()" value="to open"/>
+		<input type="button" onClick="fun2()" value="close"/>
+		<input type="button" onClick="fun3()" value="moveTo"/>
+		<input type="button" onClick="fun4()" value="moveBy"/>
+		<input type="button" onClick="fun5()" value="resizeto"/>
+		<input type="button" onClick="fun6()" value="resizeby"/>
+		<button onclick="goBack()">Go Back</button>
+		<button onclick="go()">Go 2 pages back</button>
+		<button onclick="go()">Go forward</button>
+		<p>Number of URLs in history list:</p>
+		<script>
+
+			var x;
+			function fun1(){
+			var x=window.open("","x","width=200,height=100");
+			}
+			function fun2(){
+
+			x.close();
+			}
+			function fun3(){
+			var x=window.open("","x","width=200,height=100");
+			x.moveTo(500,400);
+			x.focus();
+			}
+			function fun4(){
+			var x=window.open("","x","width=200,height=100");
+			x.moveBy(300,400);
+			x.focus();
+			}
+			function fun5(){
+			var x=window.open("","x","width=200,height=100");
+			x.resizeBy(100,100);
+			x.focus();
+			}
+			var y = history.length;
+			document.getElementById("demo").innerHTML = y;
+			function goBack() {
+				history.back();
+			}
+			function go() {
+				history.go(-2);
+			}
+			function goForward() {
+				history.forward();
+			}
+		</script>
+	</body>
+</html>

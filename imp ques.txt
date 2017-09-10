@@ -1,0 +1,13 @@
+1) ellabrotae the program to trigger the function when the user release a key in 
+the input field and function transform a charcter to upper case by using event
+handling.
+
+2) write a code such that as soon as user click anywhere in the document.
+event generates. event will call for fun.,func wll calc x,y cordinates relative to stream.
+this value is displayed in alert box.
+
+3) emplement the follwoing opertion using appropriate method:
+a)display an alert box when user click the mouse buuton once
+b)open a file named as"file1" when user click the mouse buttion.
+c)change the color of text entered in text field entr in  the text filed from
+red to green

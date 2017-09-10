@@ -1,0 +1,18 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<ul><li id="item1">Coffee)</li><li id="item2">Tea</li></ul>
+<button type="button" onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction()
+ {
+ var x = document.getElementById("item2").previousSibling.innerHTML;
+    //var x = document.getElementById("item1").nextSibling.innerHTML; 
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+</body>
+</html>

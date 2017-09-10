@@ -1,0 +1,19 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<ul id="yes"><li>Coffee</li><li>Tea</li></ul>
+<button type="button" onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() 
+{
+var x=document.getElementById("yes").firstChild.innerHTML;
+  //var x=document.getElementById("yes").firstChild.nodeName;
+//var x=document.getElementById("yes").lastChild.innerHTML;
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+</body>
+</html>

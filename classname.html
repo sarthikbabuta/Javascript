@@ -1,0 +1,15 @@
+<html>
+<head>
+<title> DOM </title>
+</head>
+<body>
+<p id="yes"></p>
+<p class="intro">DOM</p>
+<p class="intro">ABC</p>
+<p class="intro">123</p>
+<script>
+var elem=document.getElementsByClassName("intro");
+document.getElementById("yes").innerHTML=elem[1].innerHTML;
+</script>
+</body>
+</html>

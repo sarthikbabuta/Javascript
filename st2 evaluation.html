@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>1510991586</title>
+</head>
+<body id="demo">
+<p>Welcome</p>
+<button type="button" onclick="createtextarea()">createtextarea</button>
+<button type="button" onclick="removetextarea()">removetextarea</button>
+<button type="button" onclick="replace()">replace</button>
+<br><br>
+<script>
+var a=document.getElementById("demo");
+var b=document.createElement("textArea");
+var c=document.createTextNode("hello dom bom demo");
+function createtextarea()
+{
+b.appendChild(c);
+a.appendChild(b);
+}
+function removetextarea()
+{
+a.removeChild(b);
+}
+function replace()
+{
+var d=document.createTextNode("world take");
+b.replaceChild(d,c);
+}
+</script>
+</body>
+</html>

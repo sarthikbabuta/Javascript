@@ -1,0 +1,18 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<div id="main">
+<p id="yes">hello</p>
+</div>
+<script>
+var a=document.createElement("p");
+var b=document.createTextNode("hi");
+a.appendChild(b);
+var c=document.getElementById("main");
+var d=document.getElementById("yes");
+c.replaceChild(a,d);
+</script>
+</body>
+</html>

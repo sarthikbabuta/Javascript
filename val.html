@@ -1,0 +1,79 @@
+	<!DOCTYPE html> 
+	<html> 
+	<head> 
+	<meta charset="utf-8"> 
+	<title>FORM VALIDATION</title> 
+	</head> 
+	<body> 
+	<center> 
+	<fieldset style="width:200px;"> 
+	<center> 
+	<label>First Name</label>&nbsp&nbsp<input id="fn" type="text" required/><br><br> 
+	<label>Mobile No</label>&nbsp&nbsp<input id="mobile" type="text" required/><br><br> 
+	<label>Password</label>&nbsp&nbsp<input id="password" type="password"/><br><br> 
+	<label>CITY</label>&nbsp&nbsp<select id="dropdown"><option>Select</option><option>Chandigarh</option><option>Ludhiana</option></select><br><br> 
+	<label>E-Mail Id</label>&nbsp&nbsp<input id="mail" type="text"/><br><br> 
+	<input type="submit" onclick="submit() "/> 
+	</fieldset></center> 
+	<script> 
+	function submit() { 
+	fn = document.getElementById('fn').value; 
+	mobile = document.getElementById('mobile').value; 
+	password = document.getElementById('password').value; 
+	city = document.getElementById('dropdown').value; 
+	mail = document.getElementById('mail').value; 
+	isEmpty( fn , "Please enter the First name!"); 
+	isEmpty( mobile , "Please enter the mobile number!"); 
+	isEmpty( password , "Please enter password!"); 
+	isEmpty( city , "Please select city!"); 
+	isEmpty( mail , "Please enter the E-Mail id"); 
+	lengthRestriction(fn,1,30,"Name too long!!"); 
+	lengthRestriction(mobile,10,10,"Mobile No should be 10 digits long!!"); 
+	lengthRestriction(password,1,30,"Password should be between 1-30"); 
+	isAlpha(fn,"Enter only Alphabets!"); 
+	isNumeric(mobile,"Enter only numbers"); 
+	isEmail(mail,"Invalid EMAIL"); 
+	} 
+	function isEmpty( x , msg ) { 
+	if(x.length==0) 
+	{ 
+	alert(msg); 
+	} 
+	if(x=="Select") 
+	{ 
+	alert("Please select city!"); 
+	} 
+	} 
+	function lengthRestriction(x,min,max,msg) { 
+	if(x.length>max||x.length<min) 
+	{ 
+	alert(msg); 
+	} 
+	} 
+	function isAlpha(x,msg) { 
+	if(!x.match(/^[A-Za-z]+$/)) 
+	{ 
+	alert(msg); 
+	} 
+	} 
+	function isNumeric(x,msg) { 
+	if(!x.match(/^[0-9]+$/)) 
+	{ 
+	alert(msg); 
+	} 
+	} 
+	function isAlphaNumeric(x,msg) { 
+	if(!x.match(/^[A-Za-z0-9]+$/)) 
+	{ 
+	alert(msg); 
+	} 
+	} 
+	function isEmail(x,msg) { 
+	if(!x.match(/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-Z0-9\.\-]{2,4}$/)) 
+	{ 
+	alert(msg); 
+	} 
+	} 
+	</script> 
+	</body> 
+	</html> 

@@ -1,0 +1,20 @@
+
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<ul id="myList"><li>Coffee</li><li>Tea</li><li>Milk</li></ul>
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+function myFunction()
+{
+    var a=document.createTextNode("water");
+var b=document.createElement("li");
+b.appendChild(a);
+var c=document.getElementById("myList");
+c.replaceChild(b,c.childNodes[0]);
+}
+</script>
+</body>
+</html>

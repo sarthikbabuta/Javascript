@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+push<input type="text" value="d" id="yes1"></input><br><br>
+display<input type="text" value="a,b,c" id="yes2"></input><br><br>
+pop<input type="text" value="a","b","c" id="yes3"></input><br><br>
+slice<input type="text" value=1,2 id="yes4"></input><br><br>
+splice<input type="text" value=1,2 id="yes5"></input><br><br>
+<button type="button" onclick="demo1()">push</button>
+<button type="button" onclick="demo2()">displaay</button>
+<button type="button" onclick="demo3()">pop</button>
+<button type="button" onclick="demo4()">slice</button>
+<button type="button" onclick="demo5()">splice</button>
+<p id="yes1"></p>
+<p id="yes2"></p>
+<p id="yes3"></p>
+<p id="yes4"></p>
+<p id="yes5"></p>
+<script type="text/Javascript">
+function demo1()
+{
+var demo=["a","b","c"];
+demo.push("d");
+document.getElementById("yes1").innerHTML=demo;
+}
+function demo2()
+{
+var demo=["a","b","c"];
+document.getElementById("yes2").innerHTML=demo;
+}
+function demo3()
+{
+var demo=["a","b","c"];
+demo.pop();
+document.getElementById("yes3").innerHTML=demo;
+}
+function demo4()
+{
+var demo=["a","b","c"];
+document.getElementById("yes4").innerHTML=demo.slice(1,2);
+}
+function demo5()
+{
+var demo=["a","b","c"];
+demo.splice(1,2);
+document.getElementById("yes5").innerHTML=demo;
+}
+</script>
+</body>
+</html>

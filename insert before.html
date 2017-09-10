@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var a = document.createElement("p");
+var b = document.createTextNode("This is new.");
+a.appendChild(b);
+
+var c = document.getElementById("div1");
+var d = document.getElementById("p1");
+c.insertBefore(a,d);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evaluation</title>
+</head>
+<body id="demo">
+<p><CENTER><u>Welcome</u></CENTER></p>
+<form>
+<input type="button" value="Create Text Box" onclick="fun()">
+<input type="button" value="Remove Text Box" onclick="fun1()">
+<input type="button" value="Replace content of Text Box" onclick="fun2()">
+</form>
+<script type="text/javascript">
+var a;
+var b;
+var c;
+       a=document.getElementById("demo");
+        b=document.createElement("textArea");
+     c=document.createTextNode("kansal");
+
+	function fun()
+	{
+     	b.appendChild(c);
+     	a.appendChild(b);
+	}
+	function fun1()
+	{
+      a.removeChild(b);
+	}
+	function fun2()
+	{
+		//var s=document.createTextNode("");
+		var d=document.createTextNode("chod");
+		//b.appendChild(s);
+		b.replaceChild(d,c);
+		//a.appendChild(b);
+	}
+
+</script>
+</body>
+</html>

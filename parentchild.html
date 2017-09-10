@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<ul>
+<li id="yes">Coffee</li>
+<li>Tea</li>
+</ul>
+<button type="button" onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() 
+{
+
+   var x = document.getElementById("yes").parentNode.nodeName;
+   //  var x = document.getElementById("yes").nodeName;
+document.getElementById("demo").innerHTML=x;
+}
+</script>
+</body>
+</html>

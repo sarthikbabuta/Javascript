@@ -1,0 +1,15 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<input type="text" id="yes" onchange="demo()">
+<script>
+function demo()
+{
+var x=document.getElementById("yes");
+document.write(x);
+}
+</script>
+</body>
+</html>

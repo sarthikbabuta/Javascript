@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<div id="yes">hello</div>
+<button type="button" onclick="demo()">click</button>
+<p id="yes1"></p>
+<script>
+function demo()
+{
+var a=document.getElementById("yes").lastChild;
+var b=" ";
+b+=a.nodeName;
+b+=a.nodeType;
+b+=a.nodeValue;
+document.getElementById("yes1").innerHTML=b;
+}
+</script>
+</body>
+</html>

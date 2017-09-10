@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<ul>
+<li>chd</li>
+<li>delhi</li>
+<li>mohali</li>
+<li id="yes">ldh</li>
+</ul>
+<button type="button" onclick="demo()">click</button>
+<script>
+function demo()
+{
+var a=document.getElementById("yes");
+var b=document.createTextNode("sa");
+a.replaceChild(b,a.childNodes[0]);
+}
+</script>
+</body>
+</html>

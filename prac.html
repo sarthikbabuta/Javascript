@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+<img id="yes1" src="download1.jpg" alt="name" height=250>
+<br>
+<button type="button" onclick="demo()">Try it</button>
+<p id="yes2"></p>
+<script>
+function demo() 
+{
+    var x = document.getElementById("yes1");
+    var txt=" ";
+    txt+=x.nodeName;
+    txt+=x.nodeValue;
+    txt+=x.nodeType;
+    document.getElementById("yes2").innerHTML=txt;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+String 1<input type="text" id="a"></input><br><br>
+String 2<input type="text" id="b"></input><br><br>
+<button type="button" onclick="demo()">add</button>
+<script type="text/Javascript">
+function demo()
+{
+var x=document.getElementById("a").value;
+document.write(x.length);
+
+var y=document.getElementById("b").value;
+document.write(y.toUpperCase());
+
+var z=document.getElementById("b").value;
+document.write(z.indexOf("a"));
+
+var m=document.getElementById("b").value;
+document.write(m.lastIndexOf("a"));
+
+var n=document.getElementById("b").value;
+document.write(n.slice(0,3));
+
+}
+</script>
+</body>
+</html>
